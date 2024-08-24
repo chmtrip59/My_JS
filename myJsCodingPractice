@@ -1,0 +1,63 @@
+
+ const str = 'Hare Krishna hare krishna krishna krishna hare hare hare ram hare ram ram ram hare hare';
+
+ const obj={}
+ for(let x of str){	
+     if(obj[x]){
+         obj[x] += 1
+     }else{
+         obj[x] = 1
+     }
+ }
+
+
+ console.log(obj);
+
+
+ const str = 'Hare Krishna hare krishna krishna krishna hare hare hare ram hare ram ram ram hare hare';
+
+ const obj = {};
+ for (let x of str) {
+     if (obj[x]) {
+         obj[x] += 1;  Increment by 1
+     } else {
+         obj[x] = 1;  Initialize to 1
+     }
+ }
+
+ let maxChar = '';
+ let maxCount = 0;
+
+ for (let char in obj) {
+     if (obj[char] > maxCount) {
+         maxCount = obj[char];
+         maxChar = char;
+     }
+ }
+
+ console.log(`The character that appears the most is '${maxChar}' with a count of ${maxCount}.`);
+
+ const str = 'Hare Krishna hare krishna krishna krishna hare hare hare ram hare ram ram ram hare hare';
+
+ const words = str.split(' ');  Split the string into an array of words
+ let longestWord = '';
+
+ for (let word of words) {
+     if (word.length > longestWord.length) {
+         longestWord = word;
+     }
+ }
+
+ console.log(`The longest word is '${longestWord}'.`);
+
+
+ const words = str.split(' ')
+
+ let longestWord =''
+ for(let word of words){
+     if(word.length>longestWord.length){
+         longestWord = word;
+     }
+ }
+
+ console.log(longestWord);
